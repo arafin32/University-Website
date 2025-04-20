@@ -24,4 +24,15 @@ A dynamic, responsive college website built using Django, HTML, CSS, and JavaScr
 ---
 
 
+---
+
+## 🧩 Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/college-website.git
+   cd college-website
+
+
+
 
