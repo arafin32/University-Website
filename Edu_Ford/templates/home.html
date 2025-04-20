@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block abcd %}
+
+<!-- Navigation and Branding -->
+<header>
+  <div class="site-brand">
+    <a href="#">
+      <img src="{% static 'img/logo.png' %}" alt="Site Logo" />
+      <span>LearnHub</span>
+    </a>
+    <button id="toggleMenu">
+      <img src="{% static 'img/bar.png' %}" alt="Menu Icon" />
+    </button>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Programs</a></li>
+      <li><a href="#who-we-are">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reach-out">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Banner -->
+<section id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Step Into the Future of Learning</h1>
+    <p>
+      Dive into a world of modern education designed to empower you through practical experiences, expert guidance, and flexible learning schedules. We support your journey every step of the way.
+    </p>
+    <a href="#" class="btn">Start Exploring</a>
+  </div>
+</section>
+
+<!-- Programs Offered -->
+<section id="services">
+  <div class="section-header">
+    <h2>Our Core Offerings</h2>
+  </div>
+  <div class="service-list">
+    <div class="service-item">
+      <img src="{% static 'img/program1.webp' %}" alt="Internship Program" />
+      <div>
+        <img src="{% static 'img/program1.webp' %}" alt="Job Placement" />
+        <span>Career Support & Industry Placements</span>
+      </div>
+    </div>
+    <div class="service-item">
+      <img src="{% static 'img/program2.webp' %}" alt="Scholarships" />
+      <div>
+        <img src="{% static 'img/program2.png' %}" alt="Grants" />
+        <span>Full and Partial Scholarships</span>
+      </div>
+    </div>
+    <div class="service-item">
+      <img src="{% static 'img/program3.webp' %}" alt="Online Courses" />
+      <div>
+        <img src="{% static 'img/program3.png' %}" alt="Courses" />
+        <span>On-Demand Digital Classes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="who-we-are">
+  <div class="about-wrapper">
+    <div class="image-side">
+      <img src="{% static 'img/about.webp' %}" alt="About LearnHub" />
+    </div>
+    <div class="content-side">
+      <span>Who We Are</span>
+      <h2>Shaping Tomorrow’s Innovators Today</h2>
+      <p>
+        At LearnHub, we believe education should be inspiring and accessible. Our programs are crafted to cultivate talent, critical thinking, and the soft skills necessary to thrive in a competitive world.
+      </p>
+      <p>
+        Our mission is simple: build a better future by enabling every learner to achieve excellence through quality education and real-world readiness.
+      </p>
+      <p>
+        Whether you're just starting or looking to sharpen your skills, our dynamic learning environment adapts to your pace and preferences.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Campus Gallery -->
+<section id="gallery">
+  <div class="section-header">
+    <span>Snapshots</span>
+    <h2>Life on Campus</h2>
+  </div>
+  <div class="gallery-grid">
+    <div><img src="{% static 'img/gal1.webp' %}" alt="Campus 1" /></div>
+    <div><img src="{% static 'img/gal2.webp' %}" alt="Campus 2" /></div>
+    <div><img src="{% static 'img/gal3.webp' %}" alt="Campus 3" /></div>
+    <div><img src="{% static 'img/gal4.webp' %}" alt="Campus 4" /></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="reach-out">
+  <div class="section-header">
+    <span>Let’s Talk</span>
+    <h2>Contact LearnHub</h2>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-details">
+      <h4>Drop a Message <img src="{% static 'img/mail.png' %}" alt="Mail Icon" /></h4>
+      <p>
+        Have questions or want to collaborate? Our team is here to help you with everything from admissions to partnership opportunities.
+      </p>
+      <div>
+        <img src="{% static 'img/email.png' %}" alt="Email Icon" />
+        <span>support@learnhub.org</span>
+      </div>
+      <div>
+        <img src="{% static 'img/phone.png' %}" alt="Phone Icon" />
+        <span>+880 1900 000000</span>
+      </div>
+      <div>
+        <img src="{% static 'img/location.png' %}" alt="Location Icon" />
+        <span>Sector 5, Dhaka, Bangladesh</span>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="8" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 LearnHub. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+{% endblock %}
