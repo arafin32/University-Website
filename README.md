@@ -23,15 +23,51 @@ A dynamic, responsive college website built using Django, HTML, CSS, and JavaScr
 
 ---
 
+## 🧩 Setup Instructions
+
+
+## 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/arafin32/University-Website.git
+cd college-website
+```
+
+
+
+## 2. **Create & Activate a Virtual Environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+
+
+### 3. **Install Dependencies**
+
+```bash
+pip install django
+```
 
 ---
 
-## 🧩 Setup Instructions
+### 4. **Run the Development Server**
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/college-website.git
-   cd college-website
+```bash
+python manage.py runserver
+```
+
+---
+
+### 5. **Visit in Browser**
+
+```
+http://127.0.0.1:8000/
+```
+
+
+
 
 
 
